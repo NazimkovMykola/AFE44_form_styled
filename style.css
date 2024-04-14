@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 3rem;
+    border-radius: 6px;
+}
+h2 {
+    margin-bottom: 30px;
+}
+label {
+    margin-bottom: 20px;
+    position: relative;
+}
+input {
+    appearance: none;
+}
+.checkbox {
+    position: absolute;
+    background: url('./checkbox/regular.svg') no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    top:-5px;
+    right: -32px;
+}
+input:checked + .checkbox {
+background: url('./checkbox/checked.svg') no-repeat;
+background-size: cover;
+}
+input:disabled + .checkbox {
+background: url('./checkbox/disable.svg') no-repeat;
+background-size: cover;
+}
